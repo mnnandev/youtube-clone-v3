@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import React from "react";
 import "./App.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Feed, SearchFeed, VideoDetail, Channel, Navbar } from "./Components";
 import Feed from './Components/Feed'
 import VideoDetail from "./Components/VideoDetail"
 import Channel from "./Components/Channel"

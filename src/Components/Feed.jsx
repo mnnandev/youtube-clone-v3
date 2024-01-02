@@ -10,7 +10,7 @@ const Feed = () => {
   console.log(videos , "videosData")
   useEffect(() => {
     fetchFromApi(
-      `search?part=snippet&q=${selectedCateogory}}`
+      `search?part=snippet&q=${selectedCateogory}`
     )
       .then((data) => {
 

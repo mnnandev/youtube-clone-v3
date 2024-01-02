@@ -5,7 +5,8 @@ const options = {
   method: 'GET',
   url: BASE_URL,
   params: {
-    channelId: 'UCBVjMGOIkavEAhyqpxJ73Dw',
+    // regionCode: 'US',
+    // channelId: 'UCBVjMGOIkavEAhyqpxJ73Dw',
     part: 'snippet,id',
     order: 'date',
     maxResults: '50'
@@ -21,6 +22,7 @@ const options = {
 export const fetchFromApi = async (url) => {
   try {
     const response = await axios.get(`${BASE_URL}/${url}`, options);
+    console.log('response ', response)
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
